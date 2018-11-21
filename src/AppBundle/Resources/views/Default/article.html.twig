@@ -1,0 +1,18 @@
+{% extends "@App/Default/base.html.twig" %}
+{% block page %}
+<section class="article2">
+
+        <a href="{{ path('article', {'id': article.id}) }}">
+            <article class="apercu2">
+                <div class="thumb">
+                    <img src="{{ asset('img/' ~ article.id ~ '.jpg') }}" alt='thumb'>
+                </div>
+
+
+                <h2>{{ article.titre }}</h2>
+                <p>{{ article.content|raw }}</p>
+            </article>
+        </a>
+
+</section>
+{% endblock %}

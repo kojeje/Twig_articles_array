@@ -14,13 +14,13 @@
         <header>
             <div class="container entete">
                 <div class="logo">
-                    <img src="{{ asset ('img/logo2.png') }}" alt="logo">
+                    <a href="{{ path('home') }}"><img src="{{ asset ('img/logo2.png') }}" alt="logo"></a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href=""></a>lien1</li>
-                        <li><a href=""></a>lien 2</li>
-                        <li><a href=""></a>lien3</li>
+                        <li><a href="{{ path('home') }}">Lien1</a></li>
+                        <li><a href="{{ path('articles') }}">Lien 2</a></li>
+                        <li><a href="{{ path('contact') }}">Lien3</a></li>
                     </ul>
                 </nav>
             </div>
