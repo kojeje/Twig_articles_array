@@ -1,1 +1,25 @@
-{% extends "@App/Resources/views/Default/base.html.twig" %}
+{% extends "@App/Default/base.html.twig" %}
+{% block page %}
+    <div class="form">
+        <h1>CONTACT</h1>
+        <form action="PagesController.php">
+            <label for="name" class="lbl">Nom</label>
+            <input type="text" name="name" class="fields">
+
+            <label for="f_name" class="lbl">Prénom</label>
+            <input type="text" name="f_name" class="fields">
+
+            <label for="email" class="lbl">email</label>
+            <input type="email" name="email" class="fields">
+
+            <label for="subject" class="lbl">sujet</label>
+            <input type="text" name="subject" class="fields">
+
+            <label for="msg" class="lbl">Message</label>
+            <textarea name="msg" class="msg" cols="30" rows="10"></textarea>
+
+            <label for="" class="lbl">valider</label>
+            <input type="submit" class="fields">
+        </form>
+    </div>
+{% endblock %}
